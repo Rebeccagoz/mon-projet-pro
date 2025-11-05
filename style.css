@@ -1103,7 +1103,4 @@ footer h3 {
   .navigation ul li {
     padding-bottom: 15px;
   }
-  .navigation ul li:last-child {
-    padding-bottom: 0px;
-  }
 }
