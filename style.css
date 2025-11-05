@@ -1,0 +1,1108 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nosifer&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/************** BODY ************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(85, 84, 84);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(56, 56, 56);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(141, 141, 252);
+  box-shadow: 0 -100vh 0 100vh rgb(141, 141, 252);
+}
+/************** BODY ************/
+
+/************** COOKIES ************/
+#cookiesAccept {
+  background-color: rgb(141, 141, 252);
+  color: black;
+  height: 300px;
+  border-top: 2px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+}
+#cookiesAccept.active {
+  display: none;
+}
+#cookies-content {
+  width: 50%;
+}
+#cookiesAccept h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+#cookiesAccept p {
+  padding: 0;
+  margin: 0;
+}
+#cookiesAccept button {
+  padding: 10px 0px;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  font-size: 17px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(80, 80, 250);
+  color: rgb(80, 80, 250);
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#cookiesAccept button:hover {
+  background-color: rgb(80, 80, 250);
+  border: 1px solid rgb(80, 80, 250);
+  color: white;
+  transition: 0.5s;
+}
+#cookiesAccept a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+#cookiesAccept a:hover {
+  text-decoration: underline;
+}
+
+/************** COOKIES ************/
+
+/************** NAV ****************/
+nav {
+  background-color: rgb(56, 56, 56);
+  border-bottom: 3px dashed white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav #logo {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 45px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+nav #logo a {
+  text-decoration: none;
+  color: white;
+}
+nav #logo a:hover {
+  color: rgb(141, 141, 252);
+  transition: 0.5s;
+}
+.fa-scissors {
+  font-size: 18px;
+  margin-right: 8px;
+  color: rgb(80, 80, 250);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 40px;
+}
+nav ul li {
+  list-style: none;
+  line-height: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.8s;
+}
+nav ul li:hover {
+  background-color: rgb(85, 84, 84);
+  transition: 0.8s;
+}
+nav ul li.on {
+  background-color: rgb(80, 80, 250);
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: rgb(141, 141, 252);
+  transition: 0.5s;
+}
+#burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+}
+#burger span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 5px 0;
+  position: relative;
+  transition: 0.5s;
+}
+#burger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+#burger.active span:nth-child(2) {
+  opacity: 0;
+}
+#burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -10px;
+}
+/************** NAV ***************/
+
+/************** HEADER INDEX ************/
+#header-index {
+  height: 500px;
+  border-bottom: 3px dashed white;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#header-index::after {
+  content: "";
+  background-image: url(img/slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: zoomImg 20s infinite;
+}
+#header-index #bienvenue {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  width: 50%;
+}
+#header-index #bienvenue h1 {
+  letter-spacing: 12px;
+  color: rgb(80, 80, 250);
+  font-weight: bold;
+  font-size: 35px;
+}
+#header-index #bienvenue p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+#header-index #bienvenue a {
+  border: 2.5px solid rgb(80, 80, 250);
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(80, 80, 250);
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+#header-index #bienvenue a:hover {
+  background-color: rgb(80, 80, 250);
+  color: white;
+  transition: 0.5s;
+}
+@keyframes zoomImg {
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/************** HEADER *********************/
+
+/************** SECTION ACCUEIL ************/
+#section-accueil {
+  width: 70%;
+  margin: auto;
+}
+#rubriques {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#rubriques:last-child {
+  align-self: center;
+}
+.rubrique {
+  width: 250px;
+  height: 350px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+  margin-top: 40px;
+}
+
+.rubrique img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.rubrique:hover img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.rubrique:hover {
+  opacity: 1;
+}
+.rubrique a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(141, 141, 252);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+.rubrique a span {
+  color: rgb(80, 80, 250);
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+#presentation {
+  background-color: rgb(238, 235, 235);
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 60px;
+}
+#presentation .img-float {
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  width: 40%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#presentation h2 {
+  margin: 0;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  color: rgb(80, 80, 250);
+}
+#presentation h3 {
+  font-size: 18px;
+  color: rgb(80, 80, 250);
+  padding-left: 20px;
+}
+#presentation p {
+  padding-left: 20px;
+  padding-right: 30px;
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+#presentation ul {
+  text-align: justify;
+  padding-bottom: 60px;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-bottom: 1px dashed rgb(201, 199, 199);
+}
+#presentation ul li {
+  line-height: 20px;
+}
+#presentation ul li span {
+  font-weight: bold;
+  font-size: 17px;
+}
+#coiffeurs {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.coiffeur {
+  text-align: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+.coiffeur:hover {
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.coiffeur img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.coiffeur h4 {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#presentation #rdv {
+  padding: 50px;
+  text-align: center;
+  border-top: 1px dashed rgb(201, 199, 199);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#presentation #rdv a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#presentation #rdv a:hover {
+  color: rgb(141, 141, 252);
+  transition: 0.5s;
+}
+
+/************** SECTION ACCUEIL ************/
+
+/********** SECTION COIFFEUR/BARBIER ********/
+.coiffeur-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.coiffeur-section1 {
+  background-image: url(img/coiffeur-1.jpg);
+}
+.coiffeur-section2 {
+  background-image: url(img/coiffeur-2.jpg);
+}
+.coiffeur-section3 {
+  background-image: url(img/coiffeur-3.jpg);
+}
+.coiffeur-section4 {
+  background-image: url(img/coiffeur-4.jpg);
+}
+.barbier-section1 {
+  background-image: url(img/barbier-1.jpg);
+}
+.barbier-section2 {
+  background-image: url(img/barbier-2.jpg);
+}
+.barbier-section3 {
+  background-image: url(img/barbier-3.jpg);
+}
+.barbier-section4 {
+  background-image: url(img/barbier-4.jpg);
+}
+.texte-coiffeur {
+  text-align: center;
+  padding: 60px;
+  background-color: rgb(141, 141, 252);
+}
+.texte-coiffeur h2 {
+  letter-spacing: 4px;
+  color: black;
+  font-size: 30px;
+}
+.texte-coiffeur p {
+  padding-top: 10px;
+  color: rgb(65, 65, 247);
+  font-size: 18px;
+}
+.rdv-coiffeur {
+  padding-top: 10px;
+}
+.rdv-coiffeur a {
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.7s;
+}
+.rdv-coiffeur a:hover {
+  transition: 0.7s;
+  color: rgb(80, 80, 250);
+}
+
+/************* SECTION COIFFEUR/BARBIER *********/
+
+/************* SECTION PRENDRE RDV  ************/
+.body-rdv {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body-rdv nav,
+.body-rdv section,
+.body-rdv footer {
+  flex-shrink: 0;
+}
+.body-rdv section {
+  flex: 1 0 auto;
+}
+#section-rdv {
+  width: 100%;
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#rdv-img {
+  width: 35%;
+}
+#section-rdv img {
+  width: 100%;
+  height: 100%;
+}
+#prendre-rdv {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#prendre-rdv h1 {
+  color: rgb(85, 84, 84);
+  text-shadow: 1px 1px 2px black;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#formulaire-rdv {
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/***** ETAPE LOGIN *****/
+
+#etape-login {
+  padding: 20px;
+}
+#etape-login h2 {
+  letter-spacing: 1px;
+  color: rgb(80, 80, 250);
+  font-size: 22px;
+}
+#etape-login p:nth-of-type(1),
+#etape-password #retour-login + p {
+  color: rgb(136, 135, 135);
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+#etape-login .form-group,
+#etape-password .form-group {
+  position: relative;
+}
+#etape-login label {
+  color: rgba(80, 80, 250, 0.5);
+  position: absolute;
+  cursor: text;
+  left: 10px;
+  top: -5px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+#etape-login #login {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid rgba(80, 80, 250, 0.5);
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 17px;
+}
+#etape-login #login.active,
+#etape-password #pass.active {
+  border-bottom: 3px solid rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#etape-login label.active {
+  color: rgb(80, 80, 250);
+  font-size: 13px;
+  top: -20px;
+  left: 20px;
+  transition: 0.5s;
+}
+#etape-login #suivant {
+  border: none;
+  color: gray;
+  background-color: rgb(202, 201, 201);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  cursor: not-allowed;
+  font-weight: 600;
+}
+#etape-login #suivant.active,
+#etape-password #submit.active,
+#submit-mdp.active {
+  border: 2px solid rgb(80, 80, 250);
+  color: rgb(80, 80, 250);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#etape-login #suivant.active:hover,
+#etape-password #submit.active:hover,
+#submit-mdp.active:hover {
+  border: 1px solid rgb(80, 80, 250);
+  color: white;
+  background-color: rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#etape-login p:nth-of-type(2) {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: rgb(136, 135, 135);
+  font-size: 15px;
+}
+#etape-login a {
+  text-decoration: none;
+  color: rgb(80, 80, 250);
+  font-size: 15px;
+}
+#etape-login a:hover {
+  text-decoration: underline;
+}
+
+/***** ETAPE PASSWORD *****/
+
+#etape-password {
+  display: none;
+}
+#etape-password #retour-login {
+  background-color: black;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#etape-password #retour-login h3 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  color: rgb(141, 141, 252);
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+#etape-password #retour-login #cookie-login {
+  color: rgb(80, 80, 250);
+  display: inline-block;
+  padding-bottom: 20px;
+}
+#etape-password #retour-login .fa-check {
+  color: rgb(141, 141, 252);
+  padding-left: 5px;
+}
+#etape-password #modifier-login {
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+  font-size: 16px;
+}
+#etape-password #modifier-login:hover {
+  color: gray;
+  transition: 0.5s;
+}
+.fa-angles-left {
+  font-size: 14px;
+  padding-right: 5px;
+}
+#etape-password #retour-login + p {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+#etape-password label {
+  color: rgba(80, 80, 250, 0.5);
+  position: absolute;
+  cursor: text;
+  left: 20px;
+  top: -5px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+#etape-password label.active {
+  display: none;
+}
+#etape-password #pass {
+  width: 90%;
+  border: none;
+  border-bottom: 3px solid rgba(80, 80, 250, 0.5);
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: none;
+  font-size: 17px;
+}
+#etape-password #voirPass,
+#openmodale {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  color: rgb(136, 135, 135);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#etape-password #voirPass:hover,
+#openmodale:hover {
+  color: black;
+  transition: 0.5s;
+}
+#etape-password #submit,
+#submit-mdp {
+  border: none;
+  color: gray;
+  background-color: rgb(202, 201, 201);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  cursor: not-allowed;
+  font-weight: 600;
+  width: 90%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#etape-password #openmodale {
+  text-align: end;
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+/***** FENETRE MODALE POP UP : MDP OUBLIE *****/
+#pop {
+  display: none;
+}
+#pop.active {
+  display: block;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-modale {
+  background-color: rgb(231, 230, 230);
+  border-radius: 10px;
+  color: black;
+  padding: 30px 50px;
+  position: relative;
+  width: 30%;
+}
+#closemodale {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+#closemodale:hover {
+  color: black;
+  transition: 0.5s;
+}
+#content-modale h1 {
+  color: rgb(80, 80, 250);
+  text-align: center;
+  font-size: 30px;
+}
+.fa-right-to-bracket {
+  padding-right: 5px;
+}
+#content-modale input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px 0;
+}
+#email-mdp {
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+#erreur-mail {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: rgb(233, 75, 75);
+}
+/************* SECTION PRENDRE RDV  ************/
+
+/************* SECTION CREER COMPTE  ************/
+#header-creer-compte {
+  background-color: rgb(56, 56, 56);
+  height: 80px;
+}
+#header-creer-compte h1 {
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(80, 80, 250);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#section-creer-compte {
+  position: relative;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#section-creer-compte #triangle {
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 120px solid rgb(56, 56, 56);
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+#section-creer-compte form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-creer-compte .input-icon {
+  width: 40%;
+  position: relative;
+}
+#section-creer-compte .input-icon i {
+  color: rgb(182, 181, 181);
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+#section-creer-compte .input-icon:focus-within i {
+  color: rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#section-creer-compte form input[type="text"] {
+  border: 3px solid rgb(182, 181, 181);
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+  margin: 15px 0px;
+  padding: 10px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+#section-creer-compte form input[type="text"]:focus {
+  border: 3px solid rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#section-creer-compte form input[type="text"]::placeholder {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#section-creer-compte #pass-creation {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#section-creer-compte #mdp-aleatoire {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  color: rgb(46, 45, 45);
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+  background-color: transparent;
+  border: none;
+}
+#section-creer-compte #mdp-aleatoire:hover {
+  background-color: rgb(80, 80, 250);
+  transition: 0.5s;
+}
+#section-creer-compte #info-form {
+  color: rgb(182, 181, 181);
+  font-weight: bold;
+}
+#section-creer-compte #valider-creation {
+  margin: 20px;
+  padding: 10px 15px;
+  width: 40%;
+  outline: none;
+  cursor: pointer;
+  border: 3px solid rgb(80, 80, 250);
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 18px;
+  color: rgb(80, 80, 250);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+#section-creer-compte #valider-creation:hover {
+  background-color: rgb(80, 80, 250);
+  color: white;
+  transition: 0.5s;
+}
+
+/************* SECTION CREER COMPTE   ************/
+
+/************* SECTION TRAITEMENT HTML  ************/
+#section-traitement {
+  min-height: 500px;
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-traitement h1 {
+  color: black;
+  text-align: center;
+}
+#section-traitement a {
+  color: rgb(80, 80, 250);
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#section-traitement a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+/************* SECTION TRAITEMENT HTML   ************/
+
+/************** FOOTER ********************/
+footer {
+  background-color: rgb(56, 56, 56);
+  border-top: 3px dashed white;
+  display: flex;
+  justify-content: space-around;
+  min-height: 200px;
+  padding-top: 40px;
+  color: rgb(80, 80, 250);
+}
+footer h3 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: start;
+  padding-bottom: 10px;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(80, 80, 250);
+}
+.navigation a:hover {
+  color: rgb(141, 141, 252);
+}
+.navigation ul li {
+  padding-bottom: 5px;
+}
+.reseaux h3 {
+  text-align: center;
+}
+#reseaux-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+#reseaux-footer .fa-brands {
+  color: rgb(80, 80, 250);
+}
+#reseaux-footer .fa-brands:hover {
+  color: rgb(141, 141, 252);
+}
+/************** FOOTER ******************/
+
+/************** MEDIA QUERIES ************/
+@media screen and (max-width: 900px) {
+  /************** COOKIES *******************/
+  #cookies-content {
+    width: 80%;
+    font-size: 13px;
+  }
+  #cookiesAccept button {
+    margin-top: 20px;
+    width: 30%;
+    font-size: 14px;
+  }
+
+  /************** NAV ***********************/
+  nav ul {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2f3640;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  nav ul.active {
+    left: 0;
+    z-index: 100;
+  }
+  #burger {
+    display: block;
+  }
+  /************ HEADER ***********/
+  #header-index #bienvenue {
+    width: 90%;
+  }
+  #header-index #bienvenue h1 {
+    letter-spacing: 10px;
+  }
+  /************ SECTION : ACCUEIL ***********/
+  #section-accueil {
+    width: 80%;
+  }
+  #rubriques {
+    flex-direction: column;
+    align-items: center;
+  }
+  #presentation #img-float {
+    display: flex;
+    justify-content: center;
+  }
+  #presentation .img-float {
+    margin: 30px 0px;
+    width: 85%;
+  }
+  #presentation h2 {
+    text-align: center;
+    padding: 0px 30px;
+    padding-bottom: 10px;
+  }
+  #presentation h3 {
+    font-size: 18px;
+    padding: 0px 30px;
+  }
+  #presentation p {
+    padding: 0px 30px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+
+  /************* SECTION PRENDRE RDV  ************/
+  #section-rdv {
+    width: 100%;
+  }
+  #rdv-img {
+    display: none;
+  }
+  #prendre-rdv {
+    width: 100%;
+  }
+  #formulaire-rdv {
+    width: 80%;
+  }
+  #content-modale {
+    width: 50%;
+  }
+
+  /************** SECTION CREER COMPTE ******************/
+  #section-creer-compte {
+    min-height: auto;
+  }
+  #header-creer-compte h1 {
+    font-size: 25px;
+  }
+  #section-creer-compte .input-icon {
+    width: 60%;
+  }
+  #section-creer-compte form input[type="text"],
+  #section-creer-compte form input[type="text"]::placeholder {
+    font-size: 14px;
+  }
+  #section-creer-compte #mdp-aleatoire {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  #section-creer-compte #valider-creation {
+    padding: 10px 15px;
+    width: 60%;
+    font-size: 16px;
+  }
+  /************** FOOTER ******************/
+  footer {
+    min-height: auto;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+  footer h3 {
+    font-size: 17px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+  }
+  .navigation,
+  .nos-prestations {
+    height: min-content;
+  }
+  .navigation ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .navigation ul li {
+    padding-bottom: 15px;
+  }
+  .navigation ul li:last-child {
+    padding-bottom: 0px;
+  }
+}
