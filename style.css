@@ -14,14 +14,14 @@ body {
   background-color: rgb(56, 56, 56);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(141, 141, 252);
-  box-shadow: 0 -100vh 0 100vh rgb(141, 141, 252);
+  background-color: rgb(182, 182, 248);
+  box-shadow: 0 -100vh 0 100vh rgb(182, 182, 248);
 }
 /************** BODY ************/
 
 /************** COOKIES ************/
 #cookiesAccept {
-  background-color: rgb(141, 141, 252);
+  background-color: rgb(182, 182, 248);
   color: black;
   height: 300px;
   border-top: 2px dashed black;
@@ -56,16 +56,16 @@ body {
   font-size: 17px;
   background-color: transparent;
   outline: none;
-  border: 1px solid #4169e1;
-  color: #4169e1;
+  border: 1px solid rgb(110, 130, 255);
+  color: rgb(110, 130, 255);
   font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.5s;
 }
 #cookiesAccept button:hover {
-  background-color: #4169e1;
-  border: 1px solid #4169e1;
+  background-color: rgb(110, 130, 255);
+  border: 1px solid rgb(110, 130, 255);
   color: white;
   transition: 0.5s;
 }
@@ -100,13 +100,13 @@ nav #logo a {
   color: white;
 }
 nav #logo a:hover {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   transition: 0.5s;
 }
 .fa-scissors {
   font-size: 18px;
   margin-right: 8px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 nav ul {
   margin: 0;
@@ -126,7 +126,7 @@ nav ul li:hover {
   transition: 0.8s;
 }
 nav ul li.on {
-  background-color: #4169e1;
+  background-color: rgb(110, 130, 255);
 }
 nav ul li a {
   text-decoration: none;
@@ -135,7 +135,7 @@ nav ul li a {
   transition: 0.5s;
 }
 nav ul li a:hover {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   transition: 0.5s;
 }
 #burger {
@@ -199,7 +199,7 @@ nav ul li a:hover {
 }
 #header-index #bienvenue h1 {
   letter-spacing: 12px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-weight: bold;
   font-size: 35px;
 }
@@ -210,18 +210,18 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 #header-index #bienvenue a {
-  border: 2.5px solid #4169e1;
+  border: 2.5px solid rgb(110, 130, 255);
   padding: 10px 30px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 18px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-weight: bold;
   letter-spacing: 2px;
   transition: 0.5s;
 }
 #header-index #bienvenue a:hover {
-  background-color: #4169e1;
+  background-color: rgb(110, 130, 255);
   color: white;
   transition: 0.5s;
 }
@@ -281,12 +281,12 @@ nav ul li a:hover {
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   text-align: center;
   text-shadow: 2px 2px 2px black;
 }
 .rubrique a span {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-size: 35px;
   letter-spacing: 3px;
 }
@@ -312,11 +312,11 @@ nav ul li a:hover {
   padding-top: 50px;
   padding-left: 30px;
   padding-bottom: 20px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 #presentation h3 {
   font-size: 18px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   padding-left: 20px;
 }
 #presentation p {
@@ -382,11 +382,11 @@ nav ul li a:hover {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   transition: 0.5s;
 }
 #presentation #rdv a:hover {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   transition: 0.5s;
 }
 
@@ -428,7 +428,7 @@ nav ul li a:hover {
 .texte-coiffeur {
   text-align: center;
   padding: 60px;
-  background-color: rgb(141, 141, 252);
+  background-color: rgb(182, 182, 248);
 }
 .texte-coiffeur h2 {
   letter-spacing: 4px;
@@ -437,8 +437,9 @@ nav ul li a:hover {
 }
 .texte-coiffeur p {
   padding-top: 10px;
-  color: #4169e1;
+  color: rgb(92, 112, 243);
   font-size: 18px;
+  letter-spacing: 1px;
 }
 .rdv-coiffeur {
   padding-top: 10px;
@@ -453,7 +454,7 @@ nav ul li a:hover {
 }
 .rdv-coiffeur a:hover {
   transition: 0.7s;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 
 /************* SECTION COIFFEUR/BARBIER *********/
@@ -513,7 +514,7 @@ nav ul li a:hover {
 }
 #etape-login h2 {
   letter-spacing: 1px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-size: 22px;
 }
 #etape-login p:nth-of-type(1),
@@ -546,11 +547,11 @@ nav ul li a:hover {
 }
 #etape-login #login.active,
 #etape-password #pass.active {
-  border-bottom: 3px solid #4169e1;
+  border-bottom: 3px solid rgb(110, 130, 255);
   transition: 0.5s;
 }
 #etape-login label.active {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-size: 13px;
   top: -20px;
   left: 20px;
@@ -571,8 +572,8 @@ nav ul li a:hover {
 #etape-login #suivant.active,
 #etape-password #submit.active,
 #submit-mdp.active {
-  border: 2px solid #4169e1;
-  color: #4169e1;
+  border: 2px solid rgb(110, 130, 255);
+  color: rgb(110, 130, 255);
   background-color: transparent;
   cursor: pointer;
   transition: 0.5s;
@@ -580,9 +581,9 @@ nav ul li a:hover {
 #etape-login #suivant.active:hover,
 #etape-password #submit.active:hover,
 #submit-mdp.active:hover {
-  border: 1px solid #4169e1;
+  border: 1px solid rgb(110, 130, 255);
   color: white;
-  background-color: #4169e1;
+  background-color: rgb(110, 130, 255);
   transition: 0.5s;
 }
 #etape-login p:nth-of-type(2) {
@@ -594,7 +595,7 @@ nav ul li a:hover {
 }
 #etape-login a {
   text-decoration: none;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-size: 15px;
 }
 #etape-login a:hover {
@@ -616,17 +617,17 @@ nav ul li a:hover {
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   font-size: 19px;
   letter-spacing: 1px;
 }
 #etape-password #retour-login #cookie-login {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   display: inline-block;
   padding-bottom: 20px;
 }
 #etape-password #retour-login .fa-check {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
   padding-left: 5px;
 }
 #etape-password #modifier-login {
@@ -747,7 +748,7 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 #content-modale h1 {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   text-align: center;
   font-size: 30px;
 }
@@ -784,7 +785,7 @@ nav ul li a:hover {
   margin-top: 0;
   padding-top: 20px;
   text-align: center;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -825,7 +826,7 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 #section-creer-compte .input-icon:focus-within i {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   transition: 0.5s;
 }
 #section-creer-compte form input[type="text"] {
@@ -842,7 +843,7 @@ nav ul li a:hover {
   padding-left: 50px;
 }
 #section-creer-compte form input[type="text"]:focus {
-  border: 3px solid #4169e1;
+  border: 3px solid rgb(110, 130, 255);
   transition: 0.5s;
 }
 #section-creer-compte form input[type="text"]::placeholder {
@@ -869,7 +870,7 @@ nav ul li a:hover {
   border: none;
 }
 #section-creer-compte #mdp-aleatoire:hover {
-  background-color: #4169e1;
+  background-color: rgb(110, 130, 255);
   transition: 0.5s;
 }
 #section-creer-compte #info-form {
@@ -882,17 +883,17 @@ nav ul li a:hover {
   width: 40%;
   outline: none;
   cursor: pointer;
-  border: 3px solid #4169e1;
+  border: 3px solid rgb(110, 130, 255);
   background-color: transparent;
   border-radius: 20px;
   font-size: 18px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-weight: bold;
   letter-spacing: 1px;
   transition: 0.5s;
 }
 #section-creer-compte #valider-creation:hover {
-  background-color: #4169e1;
+  background-color: rgb(110, 130, 255);
   color: white;
   transition: 0.5s;
 }
@@ -914,7 +915,7 @@ nav ul li a:hover {
   text-align: center;
 }
 #section-traitement a {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
   font-size: 22px;
   text-decoration: none;
   transition: 0.5s;
@@ -933,7 +934,7 @@ footer {
   justify-content: space-around;
   min-height: 200px;
   padding-top: 40px;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 footer h3 {
   font-weight: bold;
@@ -943,10 +944,10 @@ footer h3 {
 }
 .navigation a {
   text-decoration: none;
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 .navigation a:hover {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
 }
 .navigation ul li {
   padding-bottom: 5px;
@@ -960,10 +961,10 @@ footer h3 {
   font-size: 24px;
 }
 #reseaux-footer .fa-brands {
-  color: #4169e1;
+  color: rgb(110, 130, 255);
 }
 #reseaux-footer .fa-brands:hover {
-  color: rgb(141, 141, 252);
+  color: rgb(182, 182, 248);
 }
 /************** FOOTER ******************/
 
